@@ -8,6 +8,7 @@ body {
     font-family: "Orbit", sans-serif;
     -webkit-font-smoothing: antialiased; /* 글자를 더 매끄럽게 보이게 함 */
       font-weight: 400;
+      letter-spacing: -0.02em; /* 자간을 살짝 줄이면 훨씬 세련되어 보입니다 */
       font-style: normal;
 }
 
