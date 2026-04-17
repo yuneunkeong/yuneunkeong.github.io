@@ -11,10 +11,14 @@ body {
       letter-spacing: -0.02em; /* 자간을 살짝 줄이면 훨씬 세련되어 보입니다 */
       line-height: 1.8;
       font-style: normal;
+
+    /* 가로 정렬을 위한 핵심 코드 */
+    display: flex;       /* 유연한 박스 모델 사용 */
+    gap: 20px;           /* 메뉴 사이의 가로 간격 */
+    align-items: center; /* 수직 방향 중앙 정렬 */
 }
 
 
-}
 
 .container {
     padding: 20px;
