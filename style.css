@@ -5,7 +5,7 @@
 
 body {
     /* 이 코드를 body 안에 넣으세요 */
-    font-family: -apple-system, BlinkMacSystemFont, "Orbit", sans-serif;
+    font-family: "Orbit", sans-serif;
     -webkit-font-smoothing: antialiased; /* 글자를 더 매끄럽게 보이게 함 */
       font-weight: 400;
       font-style: normal;
