@@ -1,0 +1,47 @@
+/* 기본 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 하단 메뉴 레이아웃 (원본의 특징) */
+.btm-menu {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 1000;
+}
+
+.menu {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu:hover {
+    text-decoration: underline;
+}
+
+/* 본문 스타일 */
+.index-container {
+    margin-top: 50px;
+    margin-bottom: 150px; /* 메뉴와 겹치지 않게 여백 */
+}
+
+h4 { font-size: 1.5rem; margin-bottom: 30px; }
+.text-container { margin-bottom: 40px; line-height: 1.8; }
+.small { font-size: 0.8rem; color: #666; }
+
+a { color: inherit; text-decoration: none; border-bottom: 1px solid #000; }
