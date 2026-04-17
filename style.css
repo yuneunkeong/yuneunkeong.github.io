@@ -14,7 +14,28 @@ body {
       font-style: normal;
 }
 
+.lang-menu {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    z-index: 1001;
+}
 
+.lang-link {
+    text-decoration: none;
+    color: #ccc; /* 비활성 언어는 흐리게 */
+}
+
+.lang-link.active {
+    color: #000; /* 활성 언어는 진하게 */
+    text-decoration: underline;
+}
+
+.lang-link:hover {
+    color: #333;
+}
 
 .container {
     padding: 20px;
