@@ -59,6 +59,30 @@ body {
     opacity: 0.6;          /* 대신 살짝 투명해지게 하여 클릭 느낌 전달 */
 }
 
+
+/* 1. 리스트의 점(글머리 기호) 지우기 */
+.work-list {
+    list-style: none;     /* 점 제거 */
+    padding: 0;           /* 왼쪽 기본 여백 제거 */
+    margin-top: 50px;
+}
+
+/* 2. 링크의 밑줄 지우기 */
+.work-list a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: #333;           /* 글자색 검정 */
+    display: flex;         /* 제목과 연도를 양 끝으로 보낼 때 유용 */
+    justify-content: space-between;
+    padding: 10px 0;       /* 위아래 간격 추가 */
+    border-bottom: 1px solid #eee; /* 선택사항: 항목 간 아주 연한 구분선 */
+    font-size: 30px
+}
+
+/* 3. 마우스를 올렸을 때만 변화 주기 (선택사항) */
+.work-list a:hover {
+    opacity: 0.5;          /* 마우스 올리면 살짝 흐려짐 */
+}
+
 /* 본문 스타일 */
 .index-container {
     margin-top: 50px;
