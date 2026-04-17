@@ -27,19 +27,18 @@ body {
 .btm-menu {
     position: fixed;
     right: 50px;       /* 오른쪽 벽에서 50px 띄움 */
-    top: 80%;          /* 화면 위에서 80% 지점 */
+    bottom: 30px;          /* 바닥에서 30px 지점 */
     z-index: 1000;
     text-align: right; /* 텍스트를 오른쪽으로 정렬 */
 }
 
 .menu {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 15px; /* 세로 메뉴 간의 간격 */
     cursor: pointer;
     text-decoration: none;
     color: #333;
-    display: inline-block;      /* 가로로 나열되지 않고 세로로 쌓이게 함 */
 }
 
 a {
