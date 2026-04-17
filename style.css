@@ -21,6 +21,7 @@ body {
     margin: 0 auto;
 }
 
+
 /* 하단 메뉴 레이아웃 (원본의 특징) */
 .btm-menu {
     position: fixed;
@@ -40,13 +41,19 @@ body {
     display: block;      /* 가로로 나열되지 않고 세로로 쌓이게 함 */
 }
 
+a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit;        /* 부모 요소의 색상을 따름 */
+}
+
 /* 현재 선택된 메뉴 표시 (선택 사항) */
 .menu.clicked {
     text-decoration: underline;
 }
 
 .menu:hover {
-    text-decoration: underline;
+    text-decoration: none; /* 마우스 올려도 밑줄 없음 */
+    opacity: 0.6;          /* 대신 살짝 투명해지게 하여 클릭 느낌 전달 */
 }
 
 /* 본문 스타일 */
