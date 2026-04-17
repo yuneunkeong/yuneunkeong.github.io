@@ -1,14 +1,15 @@
 /* 기본 설정 */
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
-</style>
+
 
 body {
     /* 이 코드를 body 안에 넣으세요 */
     font-family: "Orbit", sans-serif;
     -webkit-font-smoothing: antialiased; /* 글자를 더 매끄럽게 보이게 함 */
+    -moz-osx-font-smoothing: grayscale; /* 맥(Mac) 사용자를 위한 설정 추가 */
       font-weight: 400;
       letter-spacing: -0.02em; /* 자간을 살짝 줄이면 훨씬 세련되어 보입니다 */
+      line-height: 1.8;
       font-style: normal;
 }
 
@@ -38,7 +39,7 @@ body {
     cursor: pointer;
     text-decoration: none;
     color: #333;
-    display: block;      /* 가로로 나열되지 않고 세로로 쌓이게 함 */
+    display: inline-block;      /* 가로로 나열되지 않고 세로로 쌓이게 함 */
 }
 
 a {
