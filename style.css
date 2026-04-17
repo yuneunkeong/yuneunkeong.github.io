@@ -25,10 +25,9 @@ body {
 .btm-menu {
     position: fixed;
     right: 50px;       /* 오른쪽 벽에서 50px 띄움 */
-    top: 50%;          /* 화면 위에서 50% 지점 */
-    transform: translateY(-50%); /* 정확히 수직 중앙 정렬을 위한 보정 */
+    top: 10%;          /* 화면 위에서 10% 지점 */
     z-index: 1000;
-    text-align: right; /* 텍스트를 오른쪽으로 정렬 */
+    text-align: left; /* 텍스트를 오른쪽으로 정렬 */
 }
 
 .menu {
