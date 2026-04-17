@@ -1,6 +1,54 @@
-<div class="index-container">
-    <article class="post">
-        <img src="main-image.jpg" alt="Main Work" style="width: 100%;">
-        <p>Main Exhibition or Recent Project Title</p>
-    </article>
-</div>
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yun Eunkeong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lang-menu">
+        <a href="index.html" class="lang-link active">KR</a> / 
+        <a href="index_en.html" class="lang-link">EN</a>
+    </div>
+
+    <div class="container">
+        <div class="btm-menu">
+            <a href="about.html"><div class="menu">Yun Eunkeong</div></a> 
+            <a href="works.html"><div class="menu">Works</div></a>
+            <a href="cv.html"><div class="menu">CV</div></a>
+        </div>
+
+        <div class="index-container">
+            <article class="post" id="random-work-container">
+                </article>
+        </div>
+    </div>
+
+    <script>
+        const works = [
+            { title: "작품제목 1", year: "2024", img: "work01.jpg", link: "work01.html" },
+            { title: "작품제목 2", year: "2024", img: "work02.jpg", link: "work02.html" },
+            { title: "작품제목 3", year: "2023", img: "work03.jpg", link: "work03.html" },
+            { title: "작품제목 4", year: "2023", img: "work04.jpg", link: "work04.html" },
+            { title: "작품제목 5", year: "2022", img: "work05.jpg", link: "work05.html" },
+            { title: "작품제목 6", year: "2021", img: "work06.jpg", link: "work06.html" }
+        ];
+
+        const randomWork = works[Math.floor(Math.random() * works.length)];
+        const container = document.getElementById('random-work-container');
+
+        if (container) {
+            container.innerHTML = `
+                <a href="${randomWork.link}" style="text-decoration: none; color: inherit;">
+                    <div style="width: 100%; margin-bottom: 20px;">
+                        <img src="${randomWork.img}" alt="${randomWork.title}" style="width: 100%; display: block;">
+                    </div>
+                    <h4 style="margin: 0; font-size: 1.5rem;">${randomWork.title}</h4>
+                    <p style="margin: 5px 0 0; opacity: 0.5;">${randomWork.year}</p>
+                </a>
+            `;
+        }
+    </script>
+</body>
+</html>
