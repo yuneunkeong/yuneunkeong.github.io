@@ -3,9 +3,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>루프 Loop - Yun Eunkeong</title>
+    <title>루프 Loop (2025) - Yun Eunkeong</title>
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <style>
+        /* 슬라이더 스타일 */
+        .mySwiper {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .swiper-slide img {
+            width: 100%;
+            display: block;
+        }
+        /* 화살표 색상 (검은색 테마에 맞춤) */
+        .swiper-button-next, .swiper-button-prev {
+            color: #000;
+        }
+        .swiper-pagination-bullet-active {
+            background: #000;
+        }
+
         /* 상세 페이지 전용 탭 스타일 */
         .work-tabs {
             display: flex;
@@ -44,10 +65,22 @@
 
         <div class="index-container">
             <article class="post">
-                <img src="work01.jpg" alt="Loop" style="width: 100%; margin-bottom: 20px;">
                 
-                <h4>루프 Loop</h4>
-                <p style="opacity: 0.6;">2025</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://github.com/user-attachments/assets/8be616b5-5a2b-4e2c-9b98-9578c08c1da3" alt="image01"></div>
+                        <div class="swiper-slide"><img src="https://github.com/user-attachments/assets/cc30a57f-f60b-4471-8dba-42253250c515" alt="image02"></div>
+                        <div class="swiper-slide"><img src="https://github.com/user-attachments/assets/7e8d424a-faf6-46a9-895f-97522a3fa7f9" alt="image03"></div>
+                        <div class="swiper-slide"><img src="hhttps://github.com/user-attachments/assets/30f4e200-dbbe-4b90-8193-ce3716a313b7" alt="image04"></div>
+                        
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+                <h4> 〈루프〉 <i>Loop</i></h4>
+                <p style="opacity: 0.6;">2025, HD, 20m 20s</p>
 
                 <div class="work-tabs">
                     <span class="tab-btn active" onclick="changeLang('ko')">KR</span>
@@ -56,33 +89,79 @@
                 </div>
 
                 <div id="ko-content" class="lang-content active">
-                    <p>여기에 '루프' 작품에 대한 한국어 설명을 적으세요. <br>
-                    예: 반복되는 이미지의 궤적을 통해 미디어의 영속성을 탐구하는 작업입니다.</p>
+                    <p><b>*</b>
+                        <br>〈뮤트〉를 재구성 및 재편집 한 다른 버전.
+                    <p><b>작업노트</b><br>
+                        1970년경 자본주의 도시화를 비판하며 ‘풍경이론’을 주장했던 일본 감독 아다치 마사오 영화인 〈약칭 연쇄 살인마〉(1970) 장면을 유튜브 시티팝 플레이리스트 배경에서 우연히 발견한다.<br>
+                        영화는 1980년대 일본에서 유행하던 음악이 유튜브를 통해 전 세계적으로 재유행하는 현상을 시작으로, 문화-상품이나 이미지를 매개해서 현재로 회귀하는 기억의 조건을 좇는다.<br>
+                        당대 만들어진 애니메이션, 광고 이미지, 영화를 몽타주 하며 역사가 불가능한 시대가 되어버린 현재를 비춘다. <br>
+                        어쩌면 오늘을 구성하고 있는 조건 속에서 과거를 응시할 가능성을 발견할 수 있을지도 모른다.</p>
+                    <br>
+                    <p><b>Credit</b><br>
+                        Made by YUN Eunkeong<br>
+                        Produce by KANG Donghyeop, YUN Eunkeong<br>
+                        Edit, Cinematograph assistant by KANG Donghyeop <br>
+                        Music Sehee<br>
+                        Sound Mixing JO Seungho<br>
+                        Translation KIM Shin-a<br>
                 </div>
 
                 <div id="en-content" class="lang-content">
-                    <p>Write English description for 'Loop' here. <br>
-                    Ex: This work explores the permanence of media through the trajectory of repeating images.</p>
+                    <p><b>Synobsis</b><br>
+                        The director accidentally discovers that footage from <i>A.K.A. Serial Killer</i> has been used in a YouTube city pop playlist. <br>
+                        Adachi Masao's 1970 film, rooted in his "landscape theory," critiques capitalist urbanization. <br>
+                        Mute explores the global resurgence of 1980s Japanese music via YouTube, tracing how memory resurfaces through cultural commodities and images. <br>
+                        Perhaps it reveals the possibility of reflecting on the past within the conditions that shape today.
+                    <br>
+                    <p><b>Statement</b><br>
+                        City pop is a genre of music that was popular in 1980s Japan, combining the words “city” and “pop.” <br>
+                        Advertisements, animations, and film images produced during that era have since become part of the broader city pop content trend alongside the music itself. <br>
+                        Thanks to this, a single scroll can feel like time travel. The urban sensibility that crosses between past and present has been digitized through technological advancement—preserved and consumed in digital form. <br>
+                        The past is now reduced to an aesthetic device that can leap into the present through terms like “newtro” and “retro.” <br>
+                        I stumbled upon Adachi Masao’s <i>A.K.A. Serial Killer</i> (1970), a film that proposed the “landscape theory” as a critique of capitalist urbanization in 1970s Japan, embedded in a city pop playlist image. <br>
+                        Titles like Evangelion and <i>A.K.A. Serial Killer</i> are consumed alike today as aestheticized pop backgrounds. <br>
+                        Historical images in our present may be drifting as nostalgia and distorted memories, having lost their function. <br>
+                        Mute attempts to reveal a muted present—where history seems impossible—through a montage of period animation, advertisements, and film imagery.
+                    <br>
+                    <p><b>Credit</b><br>
+                        Made by YUN Eunkeong <br>
+                        Produce by KANG Donghyeop, YUN Eunkeong <br>
+                        Music Sehee <br>
+                        Sound Mixing JO Seungho <br>
+                        Translation KIM Shin-a <br>
                 </div>
             </article>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
+        // Swiper 초기화
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        // 언어 변경 함수
         function changeLang(lang) {
-            // 모든 컨텐츠 숨기기
             document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-            // 모든 버튼 비활성화
             document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
 
-            // 선택한 언어만 보이기
             if(lang === 'ko') {
                 document.getElementById('ko-content').classList.add('active');
-                event.target.classList.add('active');
             } else {
                 document.getElementById('en-content').classList.add('active');
-                event.target.classList.add('active');
             }
+            // 클릭된 버튼에 active 클래스 추가
+            event.target.classList.add('active');
         }
     </script>
 </body>
