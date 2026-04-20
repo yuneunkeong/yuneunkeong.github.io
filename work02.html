@@ -3,9 +3,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>루프 Loop - Yun Eunkeong</title>
+    <title>라디오텔레스코프 Radio Telescope (2023) - Yun Eunkeong</title>
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <style>
+        /* 슬라이더 스타일 */
+        .mySwiper {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .swiper-slide img {
+            width: 100%;
+            display: block;
+        }
+        /* 화살표 색상 (검은색 테마에 맞춤) */
+        .swiper-button-next, .swiper-button-prev {
+            color: #000;
+        }
+        .swiper-pagination-bullet-active {
+            background: #000;
+        }
+
         /* 상세 페이지 전용 탭 스타일 */
         .work-tabs {
             display: flex;
@@ -44,10 +65,23 @@
 
         <div class="index-container">
             <article class="post">
-                <img src="work02.jpg" alt="Loop" style="width: 100%; margin-bottom: 20px;">
                 
-                <h4>루프 Loop</h4>
-                <p style="opacity: 0.6;">2025</p>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://github.com/user-attachments/assets/eb0b3f68-56a6-4a0f-a7e3-b767a8c5ad7c" alt="image01"></div>
+                        <div class="swiper-slide"><img src="https://github.com/user-attachments/assets/738c3b91-d0d4-4525-84f7-b1c915beb2d1" alt="image06"></div>
+                        <div class="swiper-slide"><img src="https://github.com/user-attachments/assets/b1c9440f-205d-4f37-8c83-0d8b71806fb6" alt="image02"></div>
+                        <div class="swiper-slide"><img src="https://github.com/user-attachments/assets/96b252f4-1df5-4912-9f7a-92984ad11b13" alt="image03"></div>
+                        <div class="swiper-slide"><img src="https://github.com/user-attachments/assets/4c714cba-bd71-433e-b9f9-de0c39cb20c3" alt="image04"></div>
+                        <div class="swiper-slide"><img src="https://github.com/user-attachments/assets/f67aecd7-fec2-4bde-b9a0-592b47e40fa4" alt="image05"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+                <h4>&lt;라디오텔레스코프&gt; <i>Radio Telescope</i></h4>
+                <p style="opacity: 0.6;">2023, HD, 26m 20s</p>
 
                 <div class="work-tabs">
                     <span class="tab-btn active" onclick="changeLang('ko')">KR</span>
@@ -56,33 +90,77 @@
                 </div>
 
                 <div id="ko-content" class="lang-content active">
-                    <p>여기에 '루프' 작품에 대한 한국어 설명을 적으세요. <br>
-                    예: 반복되는 이미지의 궤적을 통해 미디어의 영속성을 탐구하는 작업입니다.</p>
+                    <p><b>시놉시스</b>
+                        <br>"아직 오지 않는 미래에서, 처음의 소리가 찾아오다."  
+                        <br>영화는 목소리를 변조하며 전파를 바꾸고, 맞지 않는 주파수를 조절한다. 보이지 않던 것이 보이기 시작하고, 들려오지 않던 것이 들려온다.</p>
+                    <br>
+                    <p><b>작업노트</b><br>
+                        ‘아직 오지 않는 미래에서 처음의 소리가 찾아오다’의 어원을 가진 하츠네 미쿠는 프로그램인 동시에 커뮤니티인 보컬로이드를 통해 만들어진 버추얼 아바타다. <br>
+                        보컬로이드를 통해 누구나 노래를 만들고 배포할 수 있게 되며, 창작의 민주화의 아이콘이 된 하츠네 미쿠는 다수에 의해 발화되고 변조된다. <br>
+                        그의 첫 앨범은 일본어로 ‘송골매’를 뜻하는 하야부사다. 이는 제2차 세계대전 일본의 전투 부대인 가미카제가 탔던 전투기의 이름이고 일본에서 최초로 쏘아 올린 인공위성의 이름이기도 하다. <br>
+                        작업은 하나의 목소리 안에 짓이겨진 시간을 탐색하며 더 이상 하나의 의미를 헤아릴 수 없는 이름을 한자리에 호명한다. 그것은 홀로그램화된 시간이며 역사이고 기억이다. <br>
+                        어쩌면 하나로 변형된 모든 것이 지나온 모든 것을 가로 지를 수 있을지도 모른다.</p>
+                    <br>
+                    <p><b>Credit</b><br>
+                        Made by YUN Eunkeong<br>
+                        Produce by KANG Donghyeop, YUN Eunkeong<br>
+                        Sound Mixing KIM Guenchae<br>
+                        Translation Maya Johnsson Rahm, Hyosung JUNG<br>
                 </div>
 
                 <div id="en-content" class="lang-content">
-                    <p>Write English description for 'Loop' here. <br>
-                    Ex: This work explores the permanence of media through the trajectory of repeating images.</p>
+                    <p><b>Synobsis</b><br>
+                        In the future that has yet to come, the first sound comes to find us.<br> 
+                        The movie changes the voice, the radio waves and adjusts the frequency that does not fit. <br>
+                        We start to see what could not be seen, and we hear what could not be heard. </p>
+                    <br>
+                    <p><b>Statement</b><br>
+                        Hatsune Miku, originating from the phrase 'In the yet-unseen future, the first sound arrives,' <br>
+                        is a virtual avatar created through the Vocaloid program, which is both a program and a community. <br>
+                        Through Vocaloid, anyone can create and distribute songs, making Hatsune Miku an icon of creative democratization. <br>
+                        Vocalized and distorted by the masses, Hatsune Miku's first album is titled 'Hayabusa' in Japanese, meaning 'peregrine falcon.' <br>
+                        This name is associated with the combat unit Kamikaze from World War II and also the first artificial satellite launched in Japan. <br>
+                        The work explores the time encapsulated within a single voice, naming the ungraspable in one place. It is hologrammed time, history, and memory. <br>
+                        Perhaps everything transformed into one can traverse everything that has passed.</p>
+                    <br>
+                    <p><b>Credit</b><br>
+                        Made by YUN Eunkeong<br>
+                        Produce by KANG Donghyeop, YUN Eunkeong<br>
+                        Sound Mixing KIM Guenchae<br>
+                        Translation Maya Johnsson Rahm, Hyosung JUNG<br>
                 </div>
             </article>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
+        // Swiper 초기화
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        // 언어 변경 함수
         function changeLang(lang) {
-            // 모든 컨텐츠 숨기기
             document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-            // 모든 버튼 비활성화
             document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
 
-            // 선택한 언어만 보이기
             if(lang === 'ko') {
                 document.getElementById('ko-content').classList.add('active');
-                event.target.classList.add('active');
             } else {
                 document.getElementById('en-content').classList.add('active');
-                event.target.classList.add('active');
             }
+            // 클릭된 버튼에 active 클래스 추가
+            event.target.classList.add('active');
         }
     </script>
 </body>
