@@ -110,6 +110,39 @@ body {
     margin-bottom: 150px; /* 메뉴와 겹치지 않게 여백 */
 }
 
+/* 관람하기 버튼 (기존 스타일 유지) */
+.btn-watch {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #000;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-watch:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* 하단 관련 글 링크 스타일 */
+.related-links ul li {
+    margin-bottom: 8px; /* 링크 사이 간격 */
+}
+
+.related-links ul li a {
+    color: #666; /* 기본은 약간 흐리게 */
+    text-decoration: none;
+    transition: 0.2s;
+    border-bottom: 1px solid transparent;
+}
+
+.related-links ul li a:hover {
+    color: #000; /* 마우스 올리면 진하게 */
+    border-bottom: 1px solid #000; /* 밑줄 생김 */
+}
+
 h4 { font-weight: 700; /* 제목은 두껍게 */ }
 .text-container { margin-bottom: 40px; line-height: 1.8; }
 .small { font-size: 0.8rem; color: #666; }
