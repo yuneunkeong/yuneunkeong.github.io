@@ -10,13 +10,17 @@
 
     <style>
         /* 슬라이더 스타일 */
-        .mySwiper {
+      .mySwiper {
             width: 100%;
+            max-width: 960px; /* 원하시는 최대 너비(px)를 입력하세요 */
+            margin: 0 auto 20px; /* auto를 추가해 화면 가운데로 정렬합니다 */
             height: auto;
             margin-bottom: 20px;
         }
         .swiper-slide img {
             width: 100%;
+            height: 540px; /* 높이를 고정하고 싶다면 수치를 입력 (예: 500px) */
+            object-fit: cover; /* 높이 고정 시 이미지가 찌그러지지 않게 채워줍니다 */
             display: block;
         }
         /* 화살표 색상 (검은색 테마에 맞춤) */
