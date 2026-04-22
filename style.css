@@ -54,7 +54,8 @@ body {
 
         /* 가로 정렬을 위한 핵심 코드 */
     display: flex;       /* 유연한 박스 모델 사용 */
-    gap: 20px;           /* 메뉴 사이의 가로 간격 */
+    flex-direction: column; /* 가로에서 세로 정렬로 변경 */
+    gap: 10px;           /* 메뉴 사이의 가로 간격 */
     align-items: center; /* 수직 방향 중앙 정렬 */
 }
 
