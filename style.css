@@ -210,25 +210,6 @@ body {
     color: #000;
 }
 
-/* 모바일 대응 */
-@media (max-width: 768px) {
-    .text-grid { grid-template-columns: 1fr; }
-    .preview-window { display: none; } /* 모바일은 성능과 공간상 미노출 추천 */
-}
-    
-    /* 1. 텍스트가 길어져도 다 보이게 하고 싶다면 아래 3줄을 삭제하세요 */
-    display: -webkit-box;
-    -webkit-line-clamp: 5; /* 3줄에서 5줄 정도로 늘려주면 국/영 병기에 적당합니다 */
-    -webkit-box-orient: vertical; 
-    overflow: hidden;
-}
-
-.grid-more {
-    margin-top: 20px;
-    font-size: 0.75rem;
-    text-decoration: underline;
-    color: #000;
-}
 
 /* 드로잉 워크 */
 /* 모바일 화면에서는 한 줄에 1개씩 보이도록 조절 */
