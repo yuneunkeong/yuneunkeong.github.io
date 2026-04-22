@@ -48,7 +48,7 @@ body {
 .btm-menu {
     position: fixed;
     right: 10%;       /* 오른쪽 벽에서 50px 띄움 */
-    bottom: 95%;          /* 바닥에서 30px 지점 */
+    bottom: 80%;          /* 바닥에서 30px 지점 */
     z-index: 1000;
     text-align: light; /* 텍스트를 오른쪽으로 정렬 */
 
@@ -56,7 +56,7 @@ body {
     display: flex;       /* 유연한 박스 모델 사용 */
     flex-direction: column; /* 가로에서 세로 정렬로 변경 */
     gap: 10px;           /* 메뉴 사이의 가로 간격 */
-    align-items: center; /* 수직 방향 중앙 정렬 */
+    align-items: flex-end; /* 수직 방향 중앙 정렬 */
 }
 
 .menu {
