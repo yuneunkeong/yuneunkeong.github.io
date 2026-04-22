@@ -47,10 +47,10 @@ body {
 /* 하단 메뉴 레이아웃 (원본의 특징) */
 .btm-menu {
     position: fixed;
-    right: 40%;       /* 오른쪽 벽에서 50px 띄움 */
-    bottom: 96%;          /* 바닥에서 30px 지점 */
+    right: 10%;       /* 오른쪽 벽에서 50px 띄움 */
+    bottom: 95%;          /* 바닥에서 30px 지점 */
     z-index: 1000;
-    text-align: center; /* 텍스트를 오른쪽으로 정렬 */
+    text-align: light; /* 텍스트를 오른쪽으로 정렬 */
 
         /* 가로 정렬을 위한 핵심 코드 */
     display: flex;       /* 유연한 박스 모델 사용 */
