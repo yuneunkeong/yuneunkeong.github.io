@@ -17,70 +17,70 @@
 
         <div class="index-container">
             <div class="text-grid">
-            <a href="https://이동할사이트주소.com" target="_blank" style="text-decoration: none; color: inherit;">
-            <article class="grid-item">
-            <span class="grid-date">2023</span>
-            <h4 class="grid-title">프로젝트 제목 1</h4>
-            <p class="grid-excerpt">수집된 데이터와 이미지의 파편들을 아카이브한 결과물입니다.</p>
-            <span class="grid-more">View Archive →</span>
-        </article>
-    </a>
+                
+                <article class="grid-item" data-link="archive-detail-01.html">
+                    <span class="grid-date">2023</span>
+                    <h4 class="grid-title">내부 프로젝트</h4>
+                    <p class="grid-excerpt">클릭하면 화면 중앙에 창이 뜹니다.</p>
+                    <span class="grid-more">View Archive →</span>
+                </article>
 
-    <a href="https://다른사이트주소.com" target="_blank" style="text-decoration: none; color: inherit;">
-        <article class="grid-item">
-            <span class="grid-date">2023</span>
-            <h4 class="grid-title">프로젝트 제목 2</h4>
-            <p class="grid-excerpt">디지털 밈의 고고학적 접근을 통한 시각 예술 연구 기록.</p>
-            <span class="grid-more">View Archive →</span>
-        </article>
-    </a>
+                <article class="grid-item" data-link="https://instagram.com/유저">
+                    <span class="grid-date">2023</span>
+                    <h4 class="grid-title">외부 링크</h4>
+                    <p class="grid-excerpt">클릭하면 인스타그램 새 창이 열립니다.</p>
+                    <span class="grid-more">Visit Link →</span>
+                </article>
+
+            </div>
         </div>
-        
- </div>
-
-
-        
-        <div id="archiveModal" class="modal">
-    <div class="modal-content">
-        <span class="close-btn">&times;</span>
-        <iframe id="modalIframe" src=""></iframe>
     </div>
-</div>
-</body>
+
+    <div id="archiveModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <iframe id="modalIframe" src=""></iframe>
+        </div>
+    </div>
 
     <script>
-    const modal = document.getElementById("archiveModal");
-    const iframe = document.getElementById("modalIframe");
-    const closeBtn = document.querySelector(".close-btn");
+        const modal = document.getElementById("archiveModal");
+        const iframe = document.getElementById("modalIframe");
+        const closeBtn = document.querySelector(".close-btn");
 
-    // 모든 grid-item 클릭 이벤트 설정
-    document.querySelectorAll('.grid-item').forEach(item => {
-        item.addEventListener('click', function(e) {
-            // View Archive 버튼에 담긴 href 주소 가져오기
-            const link = this.querySelector('.grid-more').getAttribute('href');
-            
-            // 외부 링크(http)인 경우 새창으로 보내고, 내부 파일인 경우만 모달 띄우기
-            if (!link.startsWith('http')) {
-                e.preventDefault(); // 페이지 이동 방지
-                iframe.src = link;  // iframe에 페이지 로드
-                modal.style.display = "block"; // 모달 보이기
-            }
+        document.querySelectorAll('.grid-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // data-link에 적힌 주소를 가져옴
+                const link = this.getAttribute('data-link');
+                
+                if (link.startsWith('http')) {
+                    // 외부 링크면 새 창 열기
+                    window.open(link, '_blank');
+                } else {
+                    // 내부 파일이면 모달 열기
+                    iframe.src = link;
+                    modal.style.display = "block";
+                    // 모달이 뜰 때 스크롤 방지 (선택 사항)
+                    document.body.style.overflow = "hidden";
+                }
+            });
         });
-    });
 
-    // 닫기 버튼 클릭 시
-    closeBtn.onclick = function() {
-        modal.style.display = "none";
-        iframe.src = ""; // 내용 초기화
-    }
-
-    // 모달 바깥 배경 클릭 시 닫기
-    window.onclick = function(event) {
-        if (event.target == modal) {
+        // 닫기 버튼
+        closeBtn.onclick = function() {
             modal.style.display = "none";
             iframe.src = "";
+            document.body.style.overflow = "auto";
         }
-    }
-</script>
-</html>
 
+        // 배경 클릭 시 닫기
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                iframe.src = "";
+                document.body.style.overflow = "auto";
+            }
+        }
+    </script>
+</body>
+</html>
