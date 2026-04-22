@@ -37,6 +37,50 @@
         </div>
         
  </div>
+
+
         
+        <div id="archiveModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <iframe id="modalIframe" src=""></iframe>
+    </div>
+</div>
 </body>
+
+    <script>
+    const modal = document.getElementById("archiveModal");
+    const iframe = document.getElementById("modalIframe");
+    const closeBtn = document.querySelector(".close-btn");
+
+    // 모든 grid-item 클릭 이벤트 설정
+    document.querySelectorAll('.grid-item').forEach(item => {
+        item.addEventListener('click', function(e) {
+            // View Archive 버튼에 담긴 href 주소 가져오기
+            const link = this.querySelector('.grid-more').getAttribute('href');
+            
+            // 외부 링크(http)인 경우 새창으로 보내고, 내부 파일인 경우만 모달 띄우기
+            if (!link.startsWith('http')) {
+                e.preventDefault(); // 페이지 이동 방지
+                iframe.src = link;  // iframe에 페이지 로드
+                modal.style.display = "block"; // 모달 보이기
+            }
+        });
+    });
+
+    // 닫기 버튼 클릭 시
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+        iframe.src = ""; // 내용 초기화
+    }
+
+    // 모달 바깥 배경 클릭 시 닫기
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            iframe.src = "";
+        }
+    }
+</script>
 </html>
+
