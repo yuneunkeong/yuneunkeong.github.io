@@ -176,10 +176,12 @@ body {
     font-size: 0.9rem;
     line-height: 1.7;
     color: #666;
-    /* 텍스트가 너무 길면 자동으로 말줄임표(...) 처리 */
+    
+    /* 1. 텍스트가 길어져도 다 보이게 하고 싶다면 아래 3줄을 삭제하세요 */
     display: -webkit-box;
-    -webkit-line-clamp: 3; 
+    -webkit-line-clamp: 5; /* 3줄에서 5줄 정도로 늘려주면 국/영 병기에 적당합니다 */
     -webkit-box-orient: vertical;
+    
     overflow: hidden;
 }
 
