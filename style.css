@@ -154,10 +154,17 @@ body {
 }
 
 .grid-item {
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid #eee; /* 게시물 위에 선을 그어 구분 */
-    padding-top: 20px;
+    position: relative; /* 자식 요소의 기준점 */
+}
+
+.grid-more::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer; /* 상자 전체에 마우스 손가락 모양 표시 */
 }
 
 .grid-date {
