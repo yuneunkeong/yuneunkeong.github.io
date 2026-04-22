@@ -47,7 +47,7 @@ body {
 /* 하단 메뉴 레이아웃 (원본의 특징) */
 .btm-menu {
     position: fixed;
-    right: 10%;       /* 오른쪽 벽에서 50px 띄움 */
+    right: 50px;       /* 오른쪽 벽에서 50px 띄움 */
     bottom: 80%;          /* 바닥에서 30px 지점 */
     z-index: 1000;
     text-align: light; /* 텍스트를 오른쪽으로 정렬 */
