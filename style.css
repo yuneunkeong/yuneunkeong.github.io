@@ -50,7 +50,7 @@ body {
     left: 10px;       /* 왼쪽쪽 벽에서 50px 띄움 */
     bottom: 95%;          /* 바닥에서 30px 지점 */
     z-index: 1000;
-    text-align: light; /* 텍스트를 오른쪽으로 정렬 */
+    text-align: left; /* 텍스트를 왼쪽으로 정렬 */
 
         /* 가로 정렬을 위한 핵심 코드 */
     display: flex;       /* 유연한 박스 모델 사용 */
