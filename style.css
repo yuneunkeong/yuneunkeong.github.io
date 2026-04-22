@@ -143,6 +143,61 @@ body {
     border-bottom: 1px solid #000; /* 밑줄 생김 */
 }
 
+
+/* Archive 전용 텍스트 그리드 */
+.text-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 한 줄에 2개씩 */
+    gap: 60px 40px; /* 위아래 간격 60px, 좌우 간격 40px */
+    margin-top: 40px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #eee; /* 게시물 위에 선을 그어 구분 */
+    padding-top: 20px;
+}
+
+.grid-date {
+    font-size: 0.75rem;
+    color: #aaa;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+}
+
+.grid-title {
+    font-size: 1.1rem;
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+}
+
+.grid-excerpt {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #666;
+    /* 텍스트가 너무 길면 자동으로 말줄임표(...) 처리 */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.grid-more {
+    margin-top: 20px;
+    font-size: 0.75rem;
+    text-decoration: underline;
+    color: #000;
+}
+
+/* 모바일 화면에서는 한 줄에 1개씩 보이도록 조절 */
+@media (max-width: 768px) {
+    .text-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
 h4 { font-weight: 700; /* 제목은 두껍게 */ }
 .text-container { margin-bottom: 40px; line-height: 1.8; }
 .small { font-size: 0.8rem; color: #666; }
