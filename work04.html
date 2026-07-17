@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>루프 Loop - Yun Eunkeong</title>
+    <title>저물녘 - Yun Eunkeong</title>
     <link rel="stylesheet" href="style.css">
     <style>
         /* 상세 페이지 전용 탭 스타일 */
@@ -32,6 +32,23 @@
         .lang-content.active { display: block; }
 
         .back-link { color: #000; text-decoration: none; }
+
+        /* [추가] 유튜브 비디오 반응형 16:9 비율 유지 스타일 */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 비율 설정 */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px; /* 기존 이미지 밑 여백과 동일하게 설정 */
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 <body>
@@ -45,10 +62,14 @@
 
         <div class="index-container">
             <article class="post">
-                <img src="work01.jpg" alt="Loop" style="width: 100%; margin-bottom: 20px;">
                 
-                <h4>루프 Loop</h4>
-                <p style="opacity: 0.6;">2025</p>
+                <!-- [수정] 기존 이미지를 지우고 유튜브 임베드 코드로 교체했습니다 -->
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/0nKE91bxwL4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <h4>저물녘</h4>
+                <p style="opacity: 0.6;">2024</p>
 
                 <div class="work-tabs">
                     <span class="tab-btn active" onclick="changeLang('ko')">KR</span>
@@ -57,13 +78,14 @@
                 </div>
 
                 <div id="ko-content" class="lang-content active">
-                    <p>여기에 '루프' 작품에 대한 한국어 설명을 적으세요. <br>
-                    예: 반복되는 이미지의 궤적을 통해 미디어의 영속성을 탐구하는 작업입니다.</p>
+                    <p>저물녘 <br>
+                        출연: 정준하
+                    </p>
                 </div>
 
                 <div id="en-content" class="lang-content">
-                    <p>Write English description for 'Loop' here. <br>
-                    Ex: This work explores the permanence of media through the trajectory of repeating images.</p>
+                    <p> <br>
+                    </p>
                 </div>
             </article>
         </div>
